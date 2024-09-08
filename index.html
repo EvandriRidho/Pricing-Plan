@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <title>Pricing Plan</title>
+  <style>
+    /* Custom styles for toggle switch */
+    .peer:checked ~ .toggle-bg {
+      background-color: #3b82f6; /* Blue */
+    }
+    .peer:checked ~ .toggle-switch {
+      transform: translateX(100%);
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex justify-center items-center min-h-screen bg-gradient-to-r from-blue-400 via-cyan-500 to-indigo-600">
+    <div class="max-w-5xl rounded-md shadow-md overflow-hidden bg-white px-16 py-10">
+      <header class="flex flex-col">
+        <h3 class="font-semibold mb-4 text-center">Find Ideal Plan</h3>
+        <h1 class="text-6xl font-bold mb-4">Unlock <span class="text-blue-600 underline">Your Best-Fit</span> Plan Today</h1>
+        <div class="flex justify-center items-center mt-6">
+          <span class=" text-sm font-medium text-slate-400">Billed Annually</span>
+          <label class="relative inline-flex items-center cursor-pointer mx-3">
+            <input type="checkbox" class="sr-only peer">
+            <div class="w-11 h-6 bg-gray-200 rounded-full peer-checked:bg-blue-600 peer-checked:after:translate-x-5 peer-checked:after:bg-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-gray-400 after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+          </label>
+          <span class=" text-sm  font-bold text-slate-700 ">Billed Monthly</span>
+        </div>
+      </header>
+      
+      <!-- Pricing Plans -->
+      <div class="flex justify-between mt-16 space-x-8">
+        
+        <!-- Basic Plan -->
+        <div class="relative max-w-sm rounded-lg overflow-hidden bg-black pl-4 pr-12 py-4">
+          <div class="flex flex-col mt-4">
+            <h3 class="text-white">Basic</h3>
+            <h1 class="text-white text-3xl pt-2 pb-1">Starter</h1>
+            <h2 class="text-white">$19.99 <span class="text-sm text-slate-300">/month</span></h2>
+          </div>
+          <div class="flex flex-col mt-8 mb-12">
+            <ul class="text-slate-300">
+              <li class="before:content-['•'] before:text-white before:mr-2">Most Core Features</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">Email Support</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">Annual Review</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">Limited Branding</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">5GB Storage</li>
+            </ul>
+          </div>
+          <button class="bg-yellow-400 px-3 py-2 rounded-md ml-4 w-full">Try Free For 30 Days</button>
+        </div>
+        
+        <!-- Professional Plan -->
+        <div class="relative max-w-sm rounded-lg overflow-hidden bg-blue-600 pl-4 pr-12 py-4">
+          <div class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+            Best Value
+          </div>
+          <div class="flex flex-col mt-4">
+            <h3 class="text-white">All in one</h3>
+            <h1 class="text-white text-3xl pt-2 pb-1">Professional</h1>
+            <h2 class="text-white">$39.99 <span class="text-sm text-slate-300">/month</span></h2>
+          </div>
+          <div class="flex flex-col mt-8 mb-12">
+            <ul class="text-slate-300">
+              <li class="before:content-['•'] before:text-white before:mr-2">All Core Features</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">Priority Support</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">Quarterly Review</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">Custom Branding</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">10GB Storage</li>
+            </ul>
+          </div>
+          <button class="bg-white px-3 py-2 rounded-md ml-4 w-full">Try Free For 30 Days</button>
+        </div>
+        
+        <!-- Premium Plan -->
+        <div class="relative max-w-sm rounded-lg overflow-hidden bg-black pl-4 pr-12 py-4">
+          <div class="flex flex-col mt-4">
+            <h3 class="text-white">Premium</h3>
+            <h1 class="text-white text-3xl pt-2 pb-1">Enterprise</h1>
+            <h2 class="text-white">$59.99 <span class="text-sm text-slate-300">/month</span></h2>
+          </div>
+          <div class="flex flex-col mt-8 mb-12">
+            <ul class="text-slate-300">
+              <li class="before:content-['•'] before:text-white before:mr-2">All Professional Features</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">Dedicated Support</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">Monthly Review</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">Fully Custom Branding</li>
+              <li class="before:content-['•'] before:text-white before:mr-2">Unlimited Storage</li>
+            </ul>
+          </div>
+          <button class="bg-blue-600 px-3 py-2 rounded-md ml-4 w-full">Try Free For 30 Days</button>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</body>
+</html>
